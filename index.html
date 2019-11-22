@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,12 +34,18 @@
             <h4>Estamos preparando um evento incrível!<br>14 de dezembro, das 9h às 18h, na Casa Una</h4>
         </div>
         <div>
-            <p>Mais informações siga <spam>@influencia.pelotas no Instagram</p>
+            <p>Mais informações siga <spam id="instagram" style="cursor: pointer; color: darkgrey;">@influencia.pelotas</spam> no Instagram</p>
         </div>
         <div>
             <img src="donamaid.png" alt="Influência Pelotas Logotipo da Donamaid">
             <img src="una.png" alt="Logotipo do Parque Una">
         </div>
     </article>
+    <script>
+        const insta = document.getElementById("instagram")
+        insta.addEventListener('click', () => {
+            window.open("https://www.instagram.com/influencia.pelotas/")
+        })
+    </script>
 </body>
 </html>
